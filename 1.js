@@ -4,7 +4,7 @@ function addTogether(x) {
 		return undefined;
 		//check if there's a second argument, and if this is a number, add it to the first argument.
 		//otherwise, return undefined
-	} else if (arguments.length = 2) {
+	} else if (arguments.length === 2) {
 		return typeof arguments[1] === "number" ? arguments[0] + arguments[1] : undefined;
 	} else {
 		//curried function for seperate argument
@@ -12,4 +12,4 @@ function addTogether(x) {
 	};
 }
 
-console.log(addTogether(3)(4));
+console.log(addTogether(3)(5));
